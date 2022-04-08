@@ -5,11 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1 id="price"></h1>
+    <h1 class="m-top">Calcola il prezzo del tuo biglietto</h1>
+    <div class="container">
+        <div class="wrapper">
+            <div class="form-item m-top">
+                <label for="user-name">Nome e cognome</label>
+                <input type="text" name="user-name" id="user-name">
+            </div>
+    
+            <div class="form-item m-top">
+                <label for="user-km">Km da percorrere</label>
+                <input type="text" name="user-km" id="user-km">
+            </div>
+    
+            <div class="form-item m-top">
+                <label for="user-age">Fascia d'età</label>
+                <select name="user-age" id="user-age">
+                    <option value=""></option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="over-65">Over 65</option>
+                </select>
+            </div>
+    
+            <button id="form-btn">Genera</button>
+            <button id="form-clear-btn">Annulla</button>
+        </div>
+    </div>
 
+    <h1 class="m-top">il tuo biglietto</h1>
+    <div class="container">
+        <div class="wrapper">
+            <h2>dettagli passeggeri</h2>
+            <div class="result">
+                <div class="left">
+                    <h2>Nome passeggero</h2>
+                    <p></p>
+                </div>
+                <div class="right">
+                    <h4>offerta</h4>
+                    <p id="offerta"></p>
+                    <h4>carrozza</h4>
+                    <p id="carrozza"></p>
+                    <h4>codice CP</h4>
+                    <p id="codice"></p>
+                    <h4>costo biglietto</h4>
+                    <p id="costo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
