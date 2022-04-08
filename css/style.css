@@ -18,11 +18,13 @@ body {
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 .wrapper {
     background-color: white;
-    border-radius: .3rem;
+    border-radius: .5rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -30,20 +32,16 @@ h1 {
 .left {
     background-color: gray;
     height: 150px;
-    margin-right: 0;
     display: inline-block;
 }
 
 .right {
     height: 150px;
     display: inline-block;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
 }
 
 .right h4 {
     margin-right: 3rem;
-    display: inline-block;
 }
 
 .right p {
@@ -61,11 +59,16 @@ h1 {
     display: block;
 }
 
-.wrapper button {
-   text-align: center;
-   color: #ff0055;
-   font-weight: bold;
-   padding: .3rem;
+.button {
+    text-align: center;
+}
+
+button {
+    color: #ff0055;
+    font-weight: bold;
+    padding: .3rem;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
 }
 
 label {
@@ -76,6 +79,7 @@ label {
 input {
     border: 1px solid #ff0055;
     border-radius: .3rem;
+    height: 30px;
 }
 
 select {
@@ -83,3 +87,15 @@ select {
     border-radius: .3rem;
 }
 
+h2 {
+    padding: .5rem;
+    text-transform: uppercase;
+}
+
+.result {
+    padding: 1rem;
+}
+
+.dati {
+    display: inline-block;
+}

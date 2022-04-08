@@ -54,9 +54,36 @@ formBtn.addEventListener("click",
         
         const price =document.getElementById("costo");
         console.log(price);
-        price.innerHTML = `${finalPrice}`;
-         
-        //  resultContainer.classList.remove("d-none");
+        price.innerHTML = `${finalPrice}`;  
         
+         // - far vedere il blocco delle risposte
+         const resultContainer = document.querySelector(".result");
+         console.log(resultContainer);
+         resultContainer.classList.remove("d-none");
+    }
+);
+
+const formClearBtn = document.getElementById("form-clear-btn");
+console.log(formClearBtn);
+
+formClearBtn.addEventListener("click", 
+    function() {
+        
+        // Nascondo result container
+        const resultContainer = document.querySelector(".result");
+        resultContainer.classList.add("d-none");
+
+        // Ripulsco i campi
+        const userName = document.getElementById("user-name");
+        console.log(userName);
+        userName.value = "";
+
+        const userKm = document.getElementById("user-km");
+        console.log(userKm);
+        userKm.value = "";
+
+        const userAge = document.getElementById("user-age");
+        console.log(userAge);
+        userAge.value = "";
     }
 );
