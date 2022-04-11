@@ -56,11 +56,11 @@ formBtn.addEventListener("click",
         
         const code = document.getElementById("codice");
         console.log(code);
-        code.innerHTML = Math.floor((Math.random() * 100000) + 90000);
+        code.innerHTML = Math.floor(Math.random() * (100000 - 90000) ) + 90000;
         
         const price =document.getElementById("costo");
         console.log(price);
-        price.innerHTML = `${finalPrice}`;  
+        price.innerHTML = `€ ${finalPrice.toFixed(2)}`;  
         
          // - far vedere il blocco delle risposte
          const resultContainer = document.querySelector(".result");
