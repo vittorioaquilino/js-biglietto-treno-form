@@ -42,7 +42,13 @@ formBtn.addEventListener("click",
         // // // DA RIFARE USANDO GLI ID SUGLI LI
         const offering = document.getElementById("offerta");
         console.log(offering);
-        offering.innerHTML = "standard tiket";
+        if (age === 'minorenne') {
+            offering.innerHTML = "offerta giovani"
+        } else if (age === 'over-65') {
+            offering.innerHTML = "offerta over 65"
+        } else {
+            offering.innerHTML = "standard tiket";
+        }
 
         const carriage = document.getElementById("carrozza");
         console.log(carriage);
